@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="joker.bloodbanktest.SmsOptions">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/contactNameET"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:hint="Contact Name"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/contactNumberET"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:hint="Contact Number"
+                android:inputType="numberSigned"/>
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/patientBloodGrpSP"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:hint="Blood Group"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/paitentLocationET"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:hint="Enter Location"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/hospitalNameET"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:hint="Hospital Name"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/sendBTN"
+                android:layout_margin="20dp"
+                android:text="Send"/>
+         </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

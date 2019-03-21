@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="joker.bloodbanktest.FindPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationSearchET"
+        android:hint="Enter Location"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupSearchET"
+        android:hint="Blood Group"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:id="@+id/searchBTN"
+        android:background="@drawable/search"
+        />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/donorListTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/White">
+    </ListView>
+
+
+
+</LinearLayout>
